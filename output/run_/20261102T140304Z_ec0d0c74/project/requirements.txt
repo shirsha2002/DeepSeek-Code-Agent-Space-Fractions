@@ -1,0 +1,2 @@
+# Space Fractions uses only standard library modules.
+# No external packages required.

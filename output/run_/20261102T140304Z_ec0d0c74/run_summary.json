@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "run_id": "20261102T140304Z_ec0d0c74",
+  "mode": "live_deepseek",
+  "status": "tests_passed",
+  "model": "deepseek-v4-pro",
+  "started_at": "2026-11-02T14:03:04.725054+00:00",
+  "updated_at": "2026-11-02T14:06:52.846056+00:00",
+  "repairs_used": 1,
+  "max_repairs": 20,
+  "max_output_tokens": 16000,
+  "validation": {
+    "ok": true,
+    "phase": "test",
+    "errors": [],
+    "tests_run": 25,
+    "failures": 0,
+    "errors_count": 0,
+    "independent_contract": true,
+    "output": "test_empty_bank_rejected (independent_fraction_rules.IndependentFractionRules.test_empty_bank_rejected) ... ok\ntest_exact_fraction_and_validation (independent_fraction_rules.IndependentFractionRules.test_exact_fraction_and_validation) ... ok\ntest_no_skip_unanswered (independent_fraction_rules.IndependentFractionRules.test_no_skip_unanswered) ... ok\ntest_score_once_and_states (independent_fraction_rules.IndependentFractionRules.test_score_once_and_states) ... ok\ntest_game_over_after_last (test_game.TestGame.test_game_over_after_last) ... ok\ntest_initial_state (test_game.TestGame.test_initial_state) ... ok\ntest_next_question_advances (test_game.TestGame.test_next_question_advances) ... ok\ntest_next_question_raises_if_not_playing (test_game.TestGame.test_next_question_raises_if_not_playing) ... ok\ntest_next_question_raises_if_unanswered (test_game.TestGame.test_next_question_raises_if_unanswered) ... ok\ntest_pause_resume (test_game.TestGame.test_pause_resume) ... ok\ntest_reject_empty_list (test_game.TestGame.test_reject_empty_list) ... ok\ntest_restart (test_game.TestGame.test_restart) ... ok\ntest_submit_correct (test_game.TestGame.test_submit_correct) ... ok\ntest_submit_equivalent_fraction (test_game.TestGame.test_submit_equivalent_fraction) ... ok\ntest_submit_invalid_input (test_game.TestGame.test_submit_invalid_input) ... ok\ntest_submit_raises_if_already_answered (test_game.TestGame.test_submit_raises_if_already_answered) ... ok\ntest_submit_raises_if_game_over (test_game.TestGame.test_submit_raises_if_game_over) ... ok\ntest_submit_raises_if_paused (test_game.TestGame.test_submit_raises_if_paused) ... ok\ntest_submit_wrong (test_game.TestGame.test_submit_wrong) ... ok\ntest_invalid_question (test_game.TestQuestion.test_invalid_question) ... ok\ntest_valid_question (test_game.TestQuestion.test_valid_question) ... ok\ntest_admin_create_authenticate (test_game.TestStorage.test_admin_create_authenticate) ... ok\ntest_admin_password_not_stored_plaintext (test_game.TestStorage.test_admin_password_not_stored_plaintext) ... ok\ntest_save_and_get_questions (test_game.TestStorage.test_save_and_get_questions) ... ok\ntest_score_history (test_game.TestStorage.test_score_history) ... ok\n\n----------------------------------------------------------------------\nRan 25 tests in 0.267s\n\nOK\n"
+  },
+  "error": null,
+  "inputs": [
+    {
+      "name": "Architecture_Documentation.md",
+      "sha256": "111282df7817bca771e53c82ebb053707a3217cb8f11733a2c25b631ca81db55"
+    },
+    {
+      "name": "Architecture_View.md",
+      "sha256": "77dac057e13f122ddc6fc19294490c6a961f00429b72f15df81a81adc91bdbc8"
+    }
+  ],
+  "files": [
+    {
+      "path": "main.py",
+      "sha256": "a4416ab2f988d3f9b019a56596f5bafe3ef144e435f1c93f4645f8d5ccd4f848"
+    },
+    {
+      "path": "game_core.py",
+      "sha256": "e281105401bd4a87b8b0081424d9316bcadb2cd17de67642636e3db49b9b51ae"
+    },
+    {
+      "path": "storage.py",
+      "sha256": "b7b714f78bdebb5cbb4dc02d502d830969448845386d3337a39bab82822eb07d"
+    },
+    {
+      "path": "tests/test_game.py",
+      "sha256": "7195d08a601a471f6374175a73f7bfb0fa71121d43e98f8fc03581d5866f9ea9"
+    },
+    {
+      "path": "README.md",
+      "sha256": "900aa2159e3dbdb263cb506f449875a75f43bf8eeaafdf0836882d7902bb00fc"
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "4acad703b387d742f431dd81cbb073727fc4c2daf38c9c46dbb7318ae0938c3c"
+    }
+  ],
+  "requests": [
+    {
+      "request_id": "cb5068b1-08b8-4e16-b8bb-073a7cf0689c",
+      "usage": {
+        "prompt_tokens": 12249,
+        "completion_tokens": 10869,
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 11481,
+        "reasoning_tokens": 0,
+        "total_tokens": 23118
+      },
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "request_id": "e23d28bd-eb7b-41b1-bee2-40fe999b6334",
+      "usage": {
+        "prompt_tokens": 13221,
+        "completion_tokens": 10708,
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 12453,
+        "reasoning_tokens": 0,
+        "total_tokens": 23929
+      },
+      "model": "deepseek-v4-pro"
+    }
+  ],
+  "budget": {
+    "cap_usd": "1.00",
+    "spent_usd": "0.8397864760",
+    "reserved_usd": "0",
+    "remaining_usd": "0.1602135240",
+    "uncertain": false,
+    "pending": false,
+    "request_count": 23,
+    "tokens": {
+      "prompt_tokens": 256095,
+      "completion_tokens": 234880,
+      "prompt_cache_hit_tokens": 90624,
+      "prompt_cache_miss_tokens": 165471,
+      "reasoning_tokens": 0,
+      "total_tokens": 490975
+    },
+    "cost_basis": "Application estimate at published peak/off-peak USD rates (reservations at peak); not a provider bill."
+  },
+  "manual_adjustments": [],
+  "limitations": [
+    "Separate process and static checks are not a security sandbox.",
+    "Cloud deployment/OAuth2 remain unimplemented in the desktop adaptation.",
+    "Clean Windows without Python must be tested separately."
+  ]
+}
